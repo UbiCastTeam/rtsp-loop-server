@@ -5,7 +5,7 @@ Description=RTSP looped file server
 Type=simple
 #Restart=always
 WorkingDirectory=PATH
-ExecStart=/usr/bin/python3 serve.py
+ExecStart=PATH/rtsp-simple-server loop-server.yml
 
 [Install]
 WantedBy=multi-user.target

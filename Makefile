@@ -12,7 +12,7 @@ clean:
 	rm -rf ffmpeg-* rtsp-simple-server*
 
 run: rtsp-simple-server ffmpeg-5.0.1-amd64-static/ffmpeg
-	python3 serve.py
+	./rtsp-simple-server loop-server.yml
 
 
 install: rtsp-simple-server ffmpeg-5.0.1-amd64-static/ffmpeg
