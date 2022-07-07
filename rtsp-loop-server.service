@@ -1,0 +1,11 @@
+[Unit]
+Description=RTSP looped file server
+
+[Service]
+Type=simple
+#Restart=always
+WorkingDirectory=PATH
+ExecStart=/usr/bin/python3 serve.py
+
+[Install]
+WantedBy=multi-user.target
